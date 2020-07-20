@@ -4,7 +4,8 @@
 // 使用标准库中的对象
 using namespace std;
 
-int main() {
+int main()
+{
     int age = 18;
     float price = 9.9f;
     double amount = 98.98;

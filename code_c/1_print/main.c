@@ -2,7 +2,8 @@
 
 int x, y;
 
-int add() {
+int add()
+{
     x = 1;
     y = 2;
     return x + y;
@@ -11,14 +12,17 @@ int add() {
 int count;
 
 extern void write_extern();
+
 extern void m_build_array();
+
 extern void m_pointer_test();
 
 struct User {
     int age;
 };
 
-int main() {
+int main()
+{
     int age = 20;
     char one_bit = 'Z';
     // 无符号

@@ -6,11 +6,13 @@
 
 extern int count;
 
-void write_extern(void) {
+void write_extern(void)
+{
     printf("count is %d\n", count);
 }
 
-void m_build_array() {
+void m_build_array()
+{
     int arr[10];
     for (int i = 0; i < 10; i++) {
         arr[i] = i;
@@ -20,7 +22,8 @@ void m_build_array() {
     printf("size is %lu\n", sizeof(arr));
 }
 
-void m_pointer_test() {
+void m_pointer_test()
+{
     int price;
     char str[10] = "abcdefg123";
     // &price = 0x7ffee2ddf6a8
