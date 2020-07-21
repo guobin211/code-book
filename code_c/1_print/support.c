@@ -36,3 +36,8 @@ void m_pointer_test()
     printf("%s\n", p);
     free(p);
 }
+
+int m_max(int a, int b)
+{
+    return a > b ? a : b;
+}
