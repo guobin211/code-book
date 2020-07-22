@@ -24,10 +24,8 @@
     "url": "https://github.com/guobin211/design_code/issues"
   },
   "homepage": "https://github.com/guobin211/design_code#readme",
-  "dependencies": {
-    "vuepress": "^1.5.2"
-  },
   "devDependencies": {
+    "vuepress": "^1.5.2",
     "@types/node": "^12.12.51"
   }
 }
