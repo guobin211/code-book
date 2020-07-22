@@ -10,7 +10,7 @@ function osProps() {
 osProps()
 
 // 创建Socket连接
-const client = net.createConnection({port: 3003}, () => {
+const client = net.createConnection({ port: 3003 }, () => {
   console.log('已连接到服务器');
   client.write('你好世界!\r\n');
 })

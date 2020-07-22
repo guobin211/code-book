@@ -1,0 +1,33 @@
+{
+  "name": "design_code",
+  "version": "1.0.0",
+  "description": "design with code",
+  "main": "index.js",
+  "scripts": {
+    "doc:dev": "vuepress dev docs",
+    "doc:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guobin211/design_code.git"
+  },
+  "keywords": [
+    "tcp",
+    "udp",
+    "app",
+    "design",
+    "code"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guobin211/design_code/issues"
+  },
+  "homepage": "https://github.com/guobin211/design_code#readme",
+  "dependencies": {
+    "vuepress": "^1.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^12.12.51"
+  }
+}
