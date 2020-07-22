@@ -1,3 +1,5 @@
-# design code
+# Design Code
 
-learn code with design art language
+Learning code from a design perspective
+
+[Github Page](https://guobin211.github.io/design_code/)

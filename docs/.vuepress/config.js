@@ -2,7 +2,7 @@ module.exports = {
   title: "Design Code",
   description: "just learn code with design",
   port: 8099,
-  base: "/",
+  base: "/design_code/",
   dest: "build",
   themeConfig: {
     nav: [
