@@ -56,3 +56,19 @@
 > 确保双方都断开连接，释放资源
 
 ![TCP四次挥手](./images/4shake.png)
+
+## https的加密过程
+
+> 简单概括，返回公钥，公钥解密私钥解密，私钥加密公钥解密
+
+![https]("./images/https.png")
+
+## http2的特点
+
+1.二进制传输
+
+2.header压缩
+
+3.多路复用
+
+4.server push，服务端主动推送，主动把js和css推送到客户端
