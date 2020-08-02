@@ -6,7 +6,7 @@ module.exports = {
   dest: "build",
   themeConfig: {
     nav: [
-      {text: "Gihub", link: "https://github.com/guobin211/design_code"}
+      {text: "GitHub", link: "https://github.com/guobin211/design_code"}
     ],
     sidebar: [
       {title: "进程线程与协程", path: "/01Process/"},
