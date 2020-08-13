@@ -5,11 +5,18 @@
 ```
 
    主线程
-   js线程
-   ui线程
-   异步事件线程
+   js引擎线程
+   GUI渲染线程
+   事件触发线程
    web-worker线程
 
+   // 进程
+   Browser进程，浏览器主进程，通过网络栈去下载资源
+   Renderer进程，网页进程，解析html，把url地址给Browser进程，
+           下载到资源进行渲染，最后交给Browser进程进行呈现
+   GPU进程，GPU硬件加速被打开时创建，负责3D绘制
+   插件进程
+   Pepper进程
 ```
 
 ## 浏览器加载渲染流程
@@ -30,3 +37,9 @@
   // DOMContentLoaded事件触发时，仅当DOM加载完成，不包括样式表，图片等
   // load事件触发时，页面上所有的DOM，样式表，脚本，图片都已加载完成
 ```
+
+## 浏览器资源加载
+
+    Disk Cache
+    ResourceLoader
+    CachedResourceLoader
