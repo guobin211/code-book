@@ -43,3 +43,8 @@
     Disk Cache
     ResourceLoader
     CachedResourceLoader
+
+## 浏览器渲染优化
+
+angular使用Renderer来管理用户对dom的属性操作，在下一次requestAnimationFrame统一执行更新
+react的setState()用于收集属性变化，在下一次requestAnimationFrame统一执行更新
