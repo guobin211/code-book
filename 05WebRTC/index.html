@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WebRTC协议 | Design Code</title>
+    <meta name="generator" content="VuePress 1.5.2">
+    
+    <meta name="description" content="just learn code with design">
+    <link rel="preload" href="/design_code/assets/css/0.styles.bd5024b6.css" as="style"><link rel="preload" href="/design_code/assets/js/app.ce18ee6c.js" as="script"><link rel="preload" href="/design_code/assets/js/2.36304dc6.js" as="script"><link rel="preload" href="/design_code/assets/js/5.02c97e8a.js" as="script"><link rel="prefetch" href="/design_code/assets/js/10.9d4302f1.js"><link rel="prefetch" href="/design_code/assets/js/11.c7cab13e.js"><link rel="prefetch" href="/design_code/assets/js/12.a7393271.js"><link rel="prefetch" href="/design_code/assets/js/13.624ae917.js"><link rel="prefetch" href="/design_code/assets/js/14.6d6609ac.js"><link rel="prefetch" href="/design_code/assets/js/3.b08f219a.js"><link rel="prefetch" href="/design_code/assets/js/4.441354c9.js"><link rel="prefetch" href="/design_code/assets/js/6.189a9342.js"><link rel="prefetch" href="/design_code/assets/js/7.5b690988.js"><link rel="prefetch" href="/design_code/assets/js/8.74e17b42.js"><link rel="prefetch" href="/design_code/assets/js/9.7e4e91ff.js">
+    <link rel="stylesheet" href="/design_code/assets/css/0.styles.bd5024b6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/design_code/" class="home-link router-link-active"><!----> <span class="site-name">Design Code</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="https://github.com/guobin211/design_code" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="https://github.com/guobin211/design_code" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/design_code/01Process/" class="sidebar-link">进程线程与协程</a></li><li><a href="/design_code/02Server/" class="sidebar-link">高性能服务器</a></li><li><a href="/design_code/03TCP/" class="sidebar-link">TCP</a></li><li><a href="/design_code/04UDP/" class="sidebar-link">UDP</a></li><li><a href="/design_code/05WebRTC/" aria-current="page" class="active sidebar-link">WebRTC</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#stun协议" class="sidebar-link">STUN协议</a></li><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#stun数据包" class="sidebar-link">STUN数据包</a></li><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#ice" class="sidebar-link">ICE</a></li><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#收集candidate" class="sidebar-link">收集Candidate</a></li><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#dtls协议" class="sidebar-link">DTLS协议</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#单向加密" class="sidebar-link">单向加密</a></li><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#双向加密" class="sidebar-link">双向加密</a></li><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#数字证书" class="sidebar-link">数字证书</a></li></ul></li><li class="sidebar-sub-header"><a href="/design_code/05WebRTC/#openssl" class="sidebar-link">OpenSSL</a></li></ul></li><li><a href="/design_code/06SDP/" class="sidebar-link">SDP</a></li><li><a href="/design_code/07P2P/" class="sidebar-link">P2P</a></li><li><a href="/design_code/08Web/" class="sidebar-link">Web</a></li><li><a href="/design_code/09ChangeCheck/" class="sidebar-link">ChangeCheck</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webrtc协议"><a href="#webrtc协议" class="header-anchor">#</a> WebRTC协议</h1> <h2 id="stun协议"><a href="#stun协议" class="header-anchor">#</a> STUN协议</h2> <ul><li>STUN存在的目的是进行NAT穿越</li> <li>客户端STUN用户P2P通讯，服务端STUN用于身份验证</li></ul> <p><img src="/design_code/assets/img/stun.6328e27e.png" alt="STUN协议"></p> <h2 id="stun数据包"><a href="#stun数据包" class="header-anchor">#</a> STUN数据包</h2> <blockquote><p>STUN Message Type
+STUN Message Length
+Magic Cookies
+STUN Message Body</p></blockquote> <h2 id="ice"><a href="#ice" class="header-anchor">#</a> ICE</h2> <ul><li>交互连接建立，需要两端进行交互才能创建连接</li></ul> <blockquote><p>ICE Candidate 可以进行连接的地址
+包括协议,IP,端口,和类型
+主机候选者
+反射候选者
+中继候选者</p></blockquote> <p><img src="%22./images/candidate.png%22" alt="Candidate"></p> <h2 id="收集candidate"><a href="#收集candidate" class="header-anchor">#</a> 收集Candidate</h2> <blockquote><p>Host Candidate:本机所有IP和指定端口
+Reflexive Candidate: STUN/TURN
+Relay Candidate: TURN</p></blockquote> <h2 id="dtls协议"><a href="#dtls协议" class="header-anchor">#</a> DTLS协议</h2> <blockquote><p>加密与解密的基本概念</p></blockquote> <ol><li>单向加密</li> <li>双向加密，包括单向加密和双向加密</li></ol> <h3 id="单向加密"><a href="#单向加密" class="header-anchor">#</a> 单向加密</h3> <blockquote><p>同一个秘钥加解密</p></blockquote> <h3 id="双向加密"><a href="#双向加密" class="header-anchor">#</a> 双向加密</h3> <blockquote><p>公钥加密私钥解密，私钥加密公钥解密</p></blockquote> <h3 id="数字证书"><a href="#数字证书" class="header-anchor">#</a> 数字证书</h3> <blockquote><p>https证书与ssl/tsl加密,在传输层进行加密</p></blockquote> <h2 id="openssl"><a href="#openssl" class="header-anchor">#</a> OpenSSL</h2> <blockquote><p>ssl和tsl，握手协议</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/design_code/04UDP/" class="prev">
+        UDP
+      </a></span> <span class="next"><a href="/design_code/06SDP/">
+        SDP
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/design_code/assets/js/app.ce18ee6c.js" defer></script><script src="/design_code/assets/js/2.36304dc6.js" defer></script><script src="/design_code/assets/js/5.02c97e8a.js" defer></script>
+  </body>
+</html>
