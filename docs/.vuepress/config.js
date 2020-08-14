@@ -17,7 +17,7 @@ module.exports = {
       {title: "SDP", path: "/06SDP/"},
       {title: "P2P", path: "/07P2P/"},
       {title: "Web", path: "/08Web/"},
-      {title: "ChangeCheck", path: "/08ChangeCheck/"},
+      {title: "ChangeCheck", path: "/09ChangeCheck/"},
     ],
     sidebarDepth: 2
   }
