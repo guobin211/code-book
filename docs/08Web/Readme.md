@@ -17,6 +17,7 @@
    GPU进程，GPU硬件加速被打开时创建，负责3D绘制
    插件进程
    Pepper进程
+
 ```
 
 ## 浏览器加载渲染流程
@@ -43,6 +44,15 @@
     Disk Cache
     ResourceLoader
     CachedResourceLoader
+
+```
+    // 优化方式
+    1. 优化图片，webp格式，8位png，img标签加上height和width
+    2. 合并压缩css，js
+    3. 减少http请求
+    4. 使用CDN托管
+    5. 使用离线缓存
+```
 
 ## 浏览器渲染优化
 
