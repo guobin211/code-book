@@ -3,20 +3,28 @@
 ## 浏览器线程
 
 ```
+   // 线程类
+   ThreadPoolForegroundWorker
+   ThreadPoolBackgroundWorker
+   Chrome_ChildIOThread
+   GpuMemoryThread
+   NetworkConfigWatcher
+   Compositor                                         // 多个
+   CompositorTileWorker                               // 多个
+   ThreadPoolSingleThreadSharedForegroundBlocking     // 多个
 
+
+   // Helper进程中的线程
    主线程
    js引擎线程
-   GUI渲染线程
-   事件触发线程
+   epoll事件线程
    web-worker线程
 
    // 进程
-   Browser进程，浏览器主进程，通过网络栈去下载资源
-   Renderer进程，网页进程，解析html，把url地址给Browser进程，
-           下载到资源进行渲染，最后交给Browser进程进行呈现
+   Chrome主进程，浏览器主进程，负责GL操作和调用GPU操作
    GPU进程，GPU硬件加速被打开时创建，负责3D绘制
-   插件进程
-   Pepper进程
+   Renderer进程，负责生成页面渲染对象
+   Helper进程，负责下载文件资源，网络io相关的操作，JS执行器
 
 ```
 

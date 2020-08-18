@@ -18,6 +18,7 @@ module.exports = {
       {title: "P2P", path: "/07P2P/"},
       {title: "Web", path: "/08Web/"},
       {title: "ChangeCheck", path: "/09ChangeCheck/"},
+      {title: "Blob", path: "/10Blob/"},
     ],
     sidebarDepth: 2
   }
